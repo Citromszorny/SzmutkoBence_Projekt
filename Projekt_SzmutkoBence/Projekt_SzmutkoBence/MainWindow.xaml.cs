@@ -24,5 +24,47 @@ namespace Projekt_SzmutkoBence
         {
             InitializeComponent();
         }
+
+        private void ujHozzaad_Click(object sender, RoutedEventArgs e)
+        {            
+            CheckBox check = new CheckBox();
+            check.Checked += new RoutedEventHandler(checkbox_Checked);
+            check.Unchecked += new RoutedEventHandler(checkbox1_Unchecked_1);
+            check.Content = feldatSzoveg.Text;
+            feladatokListaja.Items.Add(check);
+            
+        }
+
+        private void kijeloltTorlese_Click(object sender, RoutedEventArgs e)
+        {
+            if (checkbox12.Click == true)
+            {
+
+            }
+
+
+             += new RoutedEventHandler(checkbox12_Click);
+            
+
+        }
+        private void checkbox_Checked(object sender, RoutedEventArgs e)
+        {
+            CheckBox nev = (CheckBox)sender;
+            nev.FontStyle = FontStyles.Italic;
+            nev.Foreground = Brushes.Gray;
+        }
+
+
+        private void checkbox1_Unchecked_1(object sender, RoutedEventArgs e)
+        {
+            CheckBox nev = (CheckBox)sender;
+            nev.FontStyle = FontStyles.Normal;
+            nev.Foreground = Brushes.Black;
+        }
+
+        private void checkbox12_Click(object sender, RoutedEventArgs e)
+        {    
+            
+        }
     }
 }
