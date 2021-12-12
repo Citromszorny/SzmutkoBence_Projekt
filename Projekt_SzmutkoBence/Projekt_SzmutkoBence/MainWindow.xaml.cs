@@ -37,15 +37,9 @@ namespace Projekt_SzmutkoBence
 
         private void kijeloltTorlese_Click(object sender, RoutedEventArgs e)
         {
-            if (checkbox12.Click == true)
-            {
-
-            }
-
-
-             += new RoutedEventHandler(checkbox12_Click);
-            
-
+            CheckBox nev2 = (CheckBox)feladatokListaja.SelectedItem;
+            feladatokListaja.Items.Remove(nev2);
+            toroltElemek.Items.Add(nev2.Content);
         }
         private void checkbox_Checked(object sender, RoutedEventArgs e)
         {
@@ -63,8 +57,8 @@ namespace Projekt_SzmutkoBence
         }
 
         private void checkbox12_Click(object sender, RoutedEventArgs e)
-        {    
-            
+        {
+        
         }
     }
 }

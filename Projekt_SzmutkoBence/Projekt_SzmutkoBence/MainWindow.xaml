@@ -5,8 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Projekt_SzmutkoBence"
         mc:Ignorable="d"
-        Title="Feladatok nyilvántartása" Height="450" Width="800">
-    <Grid>
+        Title="Feladatok nyilvántartása" Height="541" Width="1005">
+    <Grid Margin="0,0,26,31">
         <Label Content="Feladatok listája" HorizontalAlignment="Left" Height="34" Margin="10,10,0,0" VerticalAlignment="Top" Width="139"/>
         <ListBox x:Name="feladatokListaja" HorizontalAlignment="Left" Height="147" Margin="10,44,0,0" VerticalAlignment="Top" Width="523"/>
         <Label Content="Feladat szövege:" HorizontalAlignment="Left" Margin="538,9,0,0" VerticalAlignment="Top"/>
@@ -14,11 +14,10 @@
         <TextBox x:Name="feldatSzoveg" HorizontalAlignment="Left" Height="24" Margin="538,40,0,0" Text="Projektek bemutatása" TextWrapping="Wrap" VerticalAlignment="Top" Width="252"/>
         <Button x:Name="kijeloltModositas" Content="Kijelölt feladat módosítása" HorizontalAlignment="Left" Height="29" Margin="538,103,0,0" VerticalAlignment="Top" Width="252"/>
         <Button x:Name="kijeloltTorlese" Content="Kijelölt feladat törlése" HorizontalAlignment="Left" Height="26" Margin="538,137,0,0" VerticalAlignment="Top" Width="252" Click="kijeloltTorlese_Click"/>
-        <ListBox x:Name="toroltElemek" HorizontalAlignment="Left" Height="170" Margin="10,239,0,0" VerticalAlignment="Top" Width="523"/>
+        <ListBox x:Name="toroltElemek" HorizontalAlignment="Left" Height="170" Margin="10,281,0,0" VerticalAlignment="Top" Width="523"/>
         <Label Content="Törölt elemek&#xD;&#xA;" HorizontalAlignment="Left" Height="29" Margin="10,0,0,0" VerticalAlignment="Center" Width="132"/>
-        <Button x:Name="kijeloltVissza" Content="Kijelölt feladat visszaállít" HorizontalAlignment="Left" Height="25" Margin="538,239,0,0" VerticalAlignment="Top" Width="252"/>
-        <Button x:Name="kijeloltVegTorlese" Content="Kijelölt feladat végleg törlése" HorizontalAlignment="Left" Height="24" Margin="538,269,0,0" VerticalAlignment="Top" Width="252"/>
-        <CheckBox x:Name="checkbox12" Content="CheckBox" HorizontalAlignment="Left" Margin="574,0,0,0" VerticalAlignment="Center" Click="checkbox12_Click"/>
+        <Button x:Name="kijeloltVissza" Content="Kijelölt feladat visszaállít" HorizontalAlignment="Left" Height="25" Margin="538,281,0,0" VerticalAlignment="Top" Width="252"/>
+        <Button x:Name="kijeloltVegTorlese" Content="Kijelölt feladat végleg törlése" HorizontalAlignment="Left" Height="24" Margin="538,311,0,0" VerticalAlignment="Top" Width="252"/>
 
     </Grid>
 </Window>
